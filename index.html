@@ -118,7 +118,11 @@
 
     <script type="module">
       import { inject } from '@vercel/analytics';
-      inject();
+      
+      // Initialize Vercel Analytics with production mode
+      inject({
+        mode: 'production'
+      });
     </script>
 
     <script>
