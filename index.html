@@ -116,6 +116,11 @@
       </div>
     </div>
 
+    <script type="module">
+      import { inject } from '@vercel/analytics';
+      inject();
+    </script>
+
     <script>
       // Correct: Only one definition pointing to your local bridge
       const MODEL_URL = "/api/chat";
